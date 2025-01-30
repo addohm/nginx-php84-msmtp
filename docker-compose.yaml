@@ -1,11 +1,11 @@
-name: cave dive club
+name: www.yourwebsite.com
 services:
     nginx:
-        container_name: cdc.addohm.net
+        container_name: www.yourwebsite.com
         ports:
             - 80:8080
             - 443:443
         volumes:
-            - /home/addohm/cdc/v2/:/var/www/html:ro
-            - /home/addohm/cdc/v2/config:/var/www/config:ro
+            - ./html:/var/www/html:ro
+            - ./config:/var/www/config:ro
         image: addohm/nginx-php8-msmtp:latest
