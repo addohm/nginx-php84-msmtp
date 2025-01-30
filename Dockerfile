@@ -1,7 +1,7 @@
 ARG ALPINE_VERSION=3.21
 FROM alpine:${ALPINE_VERSION}
-LABEL Maintainer="Tim de Pater <code@trafex.nl>"
-LABEL Description="Lightweight container with Nginx 1.26 & PHP 8.4 & msmtp based on Alpine Linux."
+LABEL Maintainer="Adam S. Leven <addohm@hotmail.com>"
+LABEL Description="Lightweight container with Nginx 1.26, PHP 8.4 & msmtp based on Alpine Linux.  This is derived from Tim de Pater's original work creating the nginx and php84 image."
 
 # Setup document root
 WORKDIR /var/www/html
